@@ -1,0 +1,28 @@
+<title>Fuzz Lab Chronicles</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="A story-driven mobile game for learning three fuzzing papers: FOX (CCS'24), ChatAFL (NDSS'24) and Fuzz4All (ICSE'24).">
+<meta name="theme-color" content="#16202B">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=IBM+Plex+Sans:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@500;700&display=swap">
+<style>/*CSS*/</style>
+<header class="topbar">
+  <div class="topbar-in">
+    <button class="brand" id="homebtn" style="background:none;border:0;cursor:pointer;padding:0" aria-label="Fuzz Lab home">
+      <span class="brand-mark" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 18 18"><rect x="1" y="1" width="4" height="4" fill="#39C9A8"/><rect x="7" y="1" width="4" height="4" fill="#39C9A8"/><rect x="13" y="1" width="4" height="4" fill="#5A6675"/><rect x="1" y="7" width="4" height="4" fill="#39C9A8"/><rect x="7" y="7" width="4" height="4" fill="#FF7447"/><rect x="13" y="7" width="4" height="4" fill="#5A6675"/><rect x="1" y="13" width="4" height="4" fill="#5A6675"/><rect x="7" y="13" width="4" height="4" fill="#39C9A8"/><rect x="13" y="13" width="4" height="4" fill="#5A6675"/></svg></span>
+      <span>FUZZ LAB</span>
+    </button>
+    <div class="xpbox"><span class="rank" id="rank">Seed</span><span class="xpbar" aria-hidden="true"><i id="xpfill"></i></span><span class="xpnum" id="xpnum">0 XP</span></div>
+  </div>
+</header>
+<main><div class="col" id="col"></div></main>
+<nav class="nav" aria-label="Main">
+  <div class="nav-in">
+    <button data-v="home" aria-current="page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6l6-3 6 3 6-3v15l-6 3-6-3-6 3z"/><path d="M9 3v15M15 6v15"/></svg>Story</button>
+    <button data-v="glossary"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5z"/><path d="M4 19.5V21h16"/></svg>Glossary</button>
+    <button data-v="viva"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 21l1.9-5.4A8 8 0 1 1 21 12z"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .9-1 1.6V14M12 17h.01"/></svg>Viva</button>
+    <button data-v="profile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>Notebook</button>
+  </div>
+</nav>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>/*JS*/</script>
